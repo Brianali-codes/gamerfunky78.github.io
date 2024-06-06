@@ -1,3 +1,8 @@
+html{
+
+    scroll-behavior: smooth;
+
+}
 background {
 
     width: fit-content;
@@ -25,6 +30,7 @@ background {
     border: none;
     border-radius: 20px;
     position: fixed;
+    width: 100%;
 }
 
 .contacts {
@@ -35,7 +41,7 @@ background {
     transition: 0.2s;
     height: 100px;
     width: 150px;
-    margin-right: 630px;
+    margin-right: 47%;
     cursor: pointer;
     font-size: medium;
     font-weight: bold;
@@ -94,9 +100,6 @@ background {
     color: rgb(0, 0, 0);
     cursor: pointer;
     box-shadow: 5px 5px 5px gray;
-
-
-
 }
 
 .content {
