@@ -1,16 +1,7 @@
 html{
 
     scroll-behavior: smooth;
-
-}
-background {
-
-    width: fit-content;
-    height: fit-content;
-    margin: auto;
-    padding: auto;
-    background-repeat: no-repeat;
-
+    
 
 }
 
@@ -25,12 +16,15 @@ background {
 }
 
 #menu {
+
     background-color: transparent;
     backdrop-filter: blur(10px);
     border: none;
     border-radius: 20px;
     position: fixed;
     width: 100%;
+    overflow-y: hidden;
+    
 }
 
 .contacts {
@@ -258,6 +252,7 @@ background {
     padding: 10px;
     border-color: #000;
     border-radius: 15px;
+    scroll-snap-align: start;
 
 
 
@@ -437,6 +432,34 @@ background {
     cursor: pointer;
 
 
+
+
+
+}
+#blank{
+    background-color: #00ff2a;
+    border-radius: 20px;
+    color: #000000;
+    border: none;
+    font-size: medium;
+    font-weight: 200;
+    width: 110px;
+    height: 40px;
+    transition: 0.3s;
+    margin-left: 20px;
+
+
+
+}
+#blank:hover{
+    
+    background-color: rgb(255, 0, 0);
+    border-color: #ffffff;
+    border-radius: 20px;
+    color: #000000;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 5px 5px 5px;
 
 
 
