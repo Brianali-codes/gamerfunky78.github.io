@@ -8,7 +8,7 @@
     <title>PORTFOLIO</title>
 </head>
 
-<body class="background" background="pexels-photo-952670.jpeg">
+<body class="background" background="images/ezgif.com-jpg-to-avif-converter.avif">
     <div id="main">
 
         <div id="menu">
@@ -28,13 +28,13 @@
                     <p class="info">Web Developer.</p>
                     <P class="info">Python Developer.</P>
                     <p class="info">currently pursuing</p>
-                    <p class="info"> javascript.</p>
+                    <p class="info"> Javascript.</p>
                     <br>
                     <br>
                 </div>
                 <div class="animated">
                     <br><br><br><br><br>
-                    <img class="illustration" src="images/web-development.gif" alt="icons" onclick="react2()">
+                    <img class="illustration" src="images/web-development.gif" alt="icons">
                 </div>
             </div>
             <div id="details2">
@@ -66,7 +66,7 @@
                     <br><br><br><br><br><br><br><br><br><br>
                     <p class="headings">Projects</p>
                     <p class="info">Below are some of my projects.</p>
-                    <a href="index2.html"><button class="redirect">Projects ➡</button></a>
+                    <a href="index2.html"><button class="redirect" id="Projects" onmouseover="changetext()" onmouseout="changetext4()">Projects </button></a>
                 </div>
                 <div class="animated">
                     <br><br><br><br><br><br><br>
@@ -84,15 +84,17 @@
                 <a href="https://github.com/gamerfunky78"><img class="images"
                         src="images/png-transparent-github-computer-icons-github-logo-monochrome-head-thumbnail.png"
                         alt=""></a>
-                <a href=""><img class="images" src="images/ig.jpg" alt="instagram"></a>
-                <a href=""><img class="images" src="images/lin.png" alt="linkedin"></a>
+                <a href="instagram.com"><img class="images" src="images/ig.jpg" alt="instagram" onclick="react()"></a>
+                <a href="linkedin.com"><img class="images" src="images/lin.png" alt="linkedin" onclick="react()"></a>
             </div>
             <br>
             <hr>
             <p class="credits2"> ©Brian Ali.</p>
             <p class="credits2"> copyright reserved.</p>
-            <p class="credits2">00200 | Nairobi | Kenya +254793465044 | plasticfoods427@gmail.com.<a
-                    href="#main"><button class="redirect">Back to top </button></a></p>
+            <p class="credits2">00200 | Nairobi | Kenya +254793465044 | plasticfoods427@gmail.com.</p>
+                <a href="#main">
+                    <button class="redirect" id="top" onmouseover="changetext3()" onmouseout="changetext2()">Back to top </button>
+                </a>
         </div>
     </div>
     <script src="jslink.js"></script>
