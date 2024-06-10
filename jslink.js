@@ -6,14 +6,33 @@
         alert("coming soon");
     
     }
-    document.getElementsByClassName("illustration")
-    function react2() {
 
-        alert("home");
-    
+    function changetext(){
+
+        document.getElementById("Projects").innerHTML = "Projects ➡"
+        
+        
+
+
     }
 
-    document.getElementsByClassName("project1")
+    function changetext3(){
+
+
+        document.getElementById("top").innerHTML = " ↑ "
+    }
+
+    function changetext2(){
+
+        document.getElementById("top").innerHTML = "Back to top"
 
 
 
+    }
+    function changetext4(){
+
+        document.getElementById("Projects").innerHTML = "Projects"
+
+
+
+    }
