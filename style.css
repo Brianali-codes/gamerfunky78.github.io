@@ -6,6 +6,7 @@ html{
 }
 
 #main {
+    
     background-color: transparent;
     border-radius: 15px;
     border: none;
@@ -20,10 +21,11 @@ html{
     background-color: transparent;
     backdrop-filter: blur(10px);
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     position: fixed;
     width: 100%;
     overflow-y: hidden;
+    
     
 }
 
@@ -35,7 +37,7 @@ html{
     transition: 0.2s;
     height: 100px;
     width: 150px;
-    margin-right: 47%;
+    margin-right: 50%;
     cursor: pointer;
     font-size: medium;
     font-weight: bold;
@@ -165,9 +167,9 @@ html{
 }
 
 #credits:hover {
-    background-color: rgb(119, 117, 117);
+    
     cursor: pointer;
-    box-shadow: 5px, 5px, 5px gray;
+    
 
 }
 
@@ -464,3 +466,18 @@ html{
 
 
 }
+
+
+@media only screen and (max-width: 800px) {
+    /* Adjustments for smaller screens */
+    #menu {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .buttons, .contacts {
+      width: 100%; /* Make buttons full width */
+      margin-bottom: 10px; /* Add some space between buttons */
+    }
+  }
+  
