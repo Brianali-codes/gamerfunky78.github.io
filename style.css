@@ -25,6 +25,7 @@ html{
     position: fixed;
     width: 100%;
     overflow-y: hidden;
+    height: 110px;
     
     
 }
@@ -468,16 +469,138 @@ html{
 }
 
 
-@media only screen and (max-width: 800px) {
-    /* Adjustments for smaller screens */
-    #menu {
-      flex-direction: column;
-      align-items: center;
+@media (max-width: 700px){
+    #main{
+        gap: 10px;
     }
-  
-    .buttons, .contacts {
-      width: 100%; /* Make buttons full width */
-      margin-bottom: 10px; /* Add some space between buttons */
+    .content{
+        gap: 10px;
     }
-  }
-  
+    #menu{
+        display:flex;
+        flex-direction: column;
+        height: 60px;
+
+
+    }
+    .buttons{
+        height: 50px;
+        width: 90px;
+        font-size: 10px;
+    }
+    .contacts{
+
+        height: 50px;
+        width: 90px;
+        font-size: 10px;
+        
+
+    }
+    #details1{
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+
+    }
+    .home{
+
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+
+    }
+    .info{
+
+       margin-left: -30px;
+
+
+    }
+    .animated{
+
+        width:fit-content;
+
+
+
+    }
+    .illustration{
+        width: 200px;
+        height: 220px;
+        margin-left:10px;
+
+    }
+    .illustration:hover{
+        width: 210px;
+        height: 225px;
+
+
+    }
+    .details2{
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 20px;
+
+    }
+    #il2{
+        width: 200px;
+        height: 220px;
+        margin-left:-70px;
+
+
+    }
+    #il2:hover{
+        width: 210px;
+        height: 225px;
+
+
+    }
+    .details3{
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 20px;
+
+    }
+    #il3{
+        width: 200px;
+        height: 220px;
+        margin-left:-70px;
+
+
+    }
+    #il3:hover{
+        width: 210px;
+        height: 225px;
+
+
+    }
+    #in1{
+        margin-left: 10px;
+
+    }
+    #in2{
+
+        margin-left: 10px;
+
+    }
+    #in3{
+
+        margin-left: 10px;
+    }
+    #in4{
+        margin-left: 10px;
+
+    }
+}
+@media (max-width: 1200px){
+
+
+    #menu{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+
+
+    }
+}
