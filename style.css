@@ -29,7 +29,9 @@ html{
     
     
 }
-
+.background{
+    background-color :black;
+}
 .contacts {
     background-color: transparent;
     color: rgb(255, 255, 255);
