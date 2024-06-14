@@ -474,12 +474,13 @@ html{
 }
 
 
-@media (max-width: 700px){
+@media (max-width: 800px){
     #main{
-        gap: 10px;
+        gap: 100px;
     }
     .content{
-        gap: 10px;
+        margin-top: 100px;
+        gap: 150px;
     }
     #menu{
         display:flex;
@@ -518,7 +519,7 @@ html{
     }
     .info{
 
-       margin-left: -30px;
+       margin-left: -50px;
 
 
     }
@@ -530,16 +531,15 @@ html{
 
     }
     .illustration{
-        width: 200px;
-        height: 220px;
+        width: 290px;
+        height: 250px;
         margin-left:10px;
 
     }
     .illustration:hover{
-        width: 210px;
-        height: 225px;
-
-
+        width: 290px;
+        height: 250px;
+        
     }
     .details2{
 
@@ -549,15 +549,15 @@ html{
 
     }
     #il2{
-        width: 200px;
-        height: 220px;
-        margin-left:-70px;
-
+        width: 290px;
+        height: 250px;
+        margin-left:-90px;
 
     }
     #il2:hover{
-        width: 210px;
-        height: 225px;
+        width: 290px;
+        height: 250px;
+       
 
 
     }
@@ -569,15 +569,16 @@ html{
 
     }
     #il3{
-        width: 200px;
-        height: 220px;
-        margin-left:-70px;
+        width: 290px;
+        height: 250px;
+        margin-left:-100px;
 
 
     }
     #il3:hover{
-        width: 210px;
-        height: 225px;
+        width: 290px;
+        height: 250px;
+        margin-left:-100px;
 
 
     }
