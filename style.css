@@ -18,6 +18,7 @@ html{
     grid-template-columns: auto;
     padding: auto;
     margin: none;
+    gap: 200px;
 }
 
 #menu {
@@ -38,9 +39,9 @@ html{
     background-color: transparent;
     color: rgb(255, 255, 255);
     border-color: transparent;
-    border-radius: 5px;
+    border-radius: 15px;
     transition: 0.2s;
-    height: 100px;
+    height: 70px;
     width: 150px;
     margin-right: 50%;
     cursor: pointer;
@@ -52,7 +53,7 @@ html{
 .contacts:hover {
 
     background-color: rgb(0, 0, 0);
-    border-radius: 5px;
+    border-radius: 25px;
     color: white;
     cursor: pointer;
     border-color: white;
@@ -76,9 +77,9 @@ html{
 
     background-color: transparent;
     color: rgb(255, 255, 255);
-    border-radius: 5px;
+    border-radius: 25px;
     transition: 0.2s;
-    height: 100px;
+    height: 70px;
     width: 150px;
     cursor: pointer;
     font-size: medium;
@@ -87,21 +88,22 @@ html{
 }
 
 .buttons:hover {
-    border-radius: 5px;
+    border-radius: 25px;
     color: white;
     cursor: pointer;
     border-color: white;
-    transition: 0.5s;
+    transition: 0.2s;
     border-style: double;
 }
 
 .buttons:active {
 
     background-color: rgb(235, 235, 235);
-    border-radius: 5px;
+    border-radius: 25px;
     color: rgb(0, 0, 0);
     cursor: pointer;
     box-shadow: 5px 5px 5px gray;
+    transition: 0.1s;
 }
 
 .content {
@@ -124,24 +126,17 @@ html{
 .headings {
 
     text-decoration: solid;
-    font-size: x-large;
+    font-size: 90px;
     color: rgb(255, 255, 255);
     padding: auto;
-    margin-left: 30px;
-    font-weight: bolder;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
 }
 
 .info {
 
-    font-size: medium;
+    font-size: 90px;
     color: rgb(255, 255, 255);
-    margin-right: 20px;
-    margin-left: 20px;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: auto;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 
@@ -168,7 +163,7 @@ html{
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    height: 300px;
+    height: 85vh;
 
 }
 
@@ -231,6 +226,8 @@ html{
     margin: auto;
     padding: auto;
     gap: 10px;
+    transform: perspective(10px);
+    animation-duration: 1s;
 
 }
 
@@ -252,15 +249,16 @@ html{
 
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 250px;
     margin-top: 150px;
     background-color: transparent;
     border-radius: 15px;
     padding: 10px;
-    border-color: #000;
+    align-items: center;
     border-radius: 15px;
     scroll-snap-align: start;
+    height: 70vh;
 
 
 
@@ -275,8 +273,9 @@ html{
     margin-top: 50px;
     background-color: transparent;
     border-radius: 15px;
-    margin: auto;
-    padding: auto;
+    padding: 10px;
+    height: 70vh;
+    scroll-snap-align: start;
 
 
 
@@ -289,16 +288,12 @@ html{
     flex-direction: row;
     justify-content: center;
     gap: 100px;
-    margin: auto;
-    padding: auto;
+    padding: 10px;
     background-color: transparent;
     border-radius: 15px;
-    margin: auto;
-
-
-
-
-
+    height: 80vh;
+    align-items: center;
+    scroll-snap-align: start;
 
 
 }
@@ -351,30 +346,13 @@ html{
 
 .illustration {
 
-    height: 490px;
-    width: 690px;
+    height: 512px;
+    width: 512px;
     border-radius: 15px;
-    transition: 0.5s;
-    margin-left: -70px;
-
-
-
-}
-
-.illustration:hover {
-
-    height: 490px;
-    width: 690px;
-    transition: 0.3s;
-    box-shadow: 5px 5px 5px 5px rgb(100, 95, 95);
-
-
-
-
+   
 
 
 }
-
 .projects {
 
     background-color: transparent;
@@ -515,6 +493,7 @@ html{
         display: flex;
         flex-direction: column;
         margin: 20px;
+        
 
     }
     .info{
