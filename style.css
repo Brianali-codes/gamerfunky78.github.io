@@ -39,7 +39,7 @@ html{
     background-color: transparent;
     color: rgb(255, 255, 255);
     border-color: transparent;
-    border-radius: 15px;
+    border-radius: 25px;
     transition: 0.2s;
     height: 70px;
     width: 150px;
@@ -79,7 +79,7 @@ html{
     background-color: transparent;
     color: rgb(255, 255, 255);
     border-radius: 25px;
-    transition: 0.2s;
+    transition: 0.1s;
     height: 70px;
     width: 150px;
     cursor: pointer;
@@ -93,7 +93,7 @@ html{
     color: white;
     cursor: pointer;
     border-color: white;
-    transition: 0.2s;
+    transition: 0.1s;
     border-style: double;
 }
 
@@ -146,15 +146,12 @@ html{
     width: 20px;
     height: 20px;
     margin-right: 0.01px;
-    margin-left: 20px;
-    border-radius: 15px;
+    margin: auto;
+    border-radius: 10px;
 
 }
-
-.images:hover {
-    background-color: blueviolet;
-    transition: 0.3s;
-
+.images:hover{
+    scale: 1.02;
 }
 
 #credits {
@@ -162,9 +159,11 @@ html{
     background-color: rgb(78, 76, 76);
     border-radius: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     cursor: pointer;
-    height: 85vh;
+    height: 70vh;
+    padding: 50px;
+    gap: 10px;
 
 }
 
@@ -179,8 +178,6 @@ html{
 
     display: flex;
     justify-content: center;
-    color: #ffffff;
-    padding: auto;
 }
 
 .icons {
@@ -188,6 +185,7 @@ html{
     display: flex;
     justify-content: center;
     flex-direction: row;
+    
 
 
 }
@@ -202,8 +200,9 @@ html{
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
     background-color: #ffffff;
-    padding: auto;
     padding-right: 15px;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 #home {
@@ -215,7 +214,9 @@ html{
     cursor: pointer;
 
 }
-
+.info2{
+    margin-left: -100px;
+}
 .home {
 
     width: fit-content;
@@ -350,6 +351,7 @@ html{
     height: 512px;
     width: 512px;
     border-radius: 15px;
+    margin-top: 20px;
    
 
 
@@ -451,7 +453,22 @@ html{
 
 
 }
+.info1{
+    font-size: 20px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
+}
+.github-icon{
+    width: 30px;
+    
+
+
+}
+.github-icon:hover{
+    scale: 1.1;
+
+}
 
 @media (max-width: 800px){
     #main{
