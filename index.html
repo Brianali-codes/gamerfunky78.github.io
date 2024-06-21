@@ -13,6 +13,10 @@
     <div id="main">
 
         <div id="menu">
+            <div class="logo-icon1">
+                <img src="images/simple.jpg" alt="logo" id="logo-icon">
+            </div>
+            
             <a href="#credits"><button class="contacts"> Contacts </button></a>
             <a href="#main"><button class="buttons"> Home </button></a>
             <a href="#details2"><button class="buttons"> About </button></a>
@@ -48,7 +52,8 @@
                 </div>
                 <div class="Home">
                     <br><br>
-                    <div>
+                    <div class="il2child">
+
                         <p class="headings">About</p>
                         <p class="info">experience in programming with python and fundamental javascript. My languages and tools are:</p>
                         
@@ -57,7 +62,7 @@
 
                     <div class="icons1">
 
-                        <div>
+                        <div class="inf">
 
                             <img class="images" src="images/html.png" alt="html"> 
                             <img class="images" src="images/css.png" alt="css">
@@ -66,13 +71,14 @@
                             <img class="images" src="images/github-logo.png" alt="">
                             <img class="images" src="images/social.png" alt="">
                         </div>
-                        <div>
+                        <div style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
                             <p>Html.</p>
                             <p>CSS.</p>
                             <p>JS.</p>
                             <p>Python.</p>
                             <p>Github</p>
                             <p>Git</p>
+                            <p>Tailwind css</p>
 
                         </div>
 
@@ -81,6 +87,7 @@
                     </div>
                 </div>
             </div>
+            
             <div id="details3">
                 <br>
                 <br>
@@ -88,9 +95,9 @@
                 <br>
                 <div class="Home">
                     <br><br>
-                    <p class="headings">Projects</p>
-                    <p class="info">press the button to see some of my projects: </p>
-                    <a href="https://github.com/gamerfunky78" target="_blank"><button class="redirect" id="Projects" onmouseover="changetext()" onmouseout="changetext4()">Projects </button></a>
+                    <p class="headings" id="h2">Projects</p>
+                    <p class="info" id="p22">press the button to see some of my projects: </p>
+                    <a href="https://github.com/gamerfunky78" target="_blank"><button class="redirect" id="Projects">Projects </button></a>
                 </div>
                 <div class="animated">
                     <br><br><br><br><br><br><br>
@@ -102,7 +109,8 @@
         </div>
 
         <div id="credits">
-            <div>
+
+            <div class="reach">
                 <br><br>
                 <p class="info1">HOW TO REACH ME:</p>
                 <img src="images/github-logo.png" alt="github-icon" class="github-icon"><br><br>
@@ -111,13 +119,34 @@
             </div>
             <div class="info2">
                 <br><br><br><br><br>
-                <p class="info">gamerfunky78.github.io</p>
+               <a href="github.com/gamerfunky78"><p class="info" style="margin-left: 30px; ">github.com/gamerfunky78</p></a> 
+               <a href="inkedin.com/in/brian-ali-a49119315/"><p class="info">linkedin.com/in/brian-ali-a49119315/</p></a> 
+                <a href="Instagram.com/bryce._.six"><p class="info" style="margin-left: 30px;">Instagram.com/bryce._.six</p></a>
+                
+            </div>
+            <div class="contact-msg" id="contact-msg">
+                <div>
+                    <p class="info" style="margin-left: -550px;"  id="inq">Inqueries</p>
+
+                    <form action="https://formsubmit.co/brianali427@gmail.com" method="POST">
+                        <input type="email" name="email" id="em" required placeholder="Email"><br><br>
+                        <textarea type="msg" name="textarea" id="msg" required placeholder="Message"></textarea><br><br>
+                        <input type="hidden" name="_next" value="https://gamerfunky78.github.io/thankyou_page/">
+                        <input type="hidden" name="_captcha" value="false">
+                        <button type="submit" id="submit" onclick="userHandle()">Submit</button>   
+                    </form>
+                </div>
+                <div>
+
+
+                </div>
+                
             </div>
             
             
         </div>
     </div>
-    <script src="index.js"></script>
+    <script src="jslink.js"></script>
 </body>
 
 </html>
