@@ -20,7 +20,11 @@ html{
     margin: none;
     gap: 200px;
 }
-
+.Home{
+    animation: slideinleft;
+    animation-duration: 1s;
+    animation-delay: .5s;
+}
 #menu {
 
     background-color: transparent;
@@ -31,6 +35,9 @@ html{
     width: 100%;
     overflow-y: hidden;
     height: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     
     
 }
@@ -139,7 +146,11 @@ html{
     color: rgb(255, 255, 255);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+.info:hover{
+    scale: 1.05;
 
+
+}
 
 .images {
 
@@ -200,7 +211,6 @@ html{
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
     background-color: #ffffff;
-    padding-right: 15px;
     padding: 10px;
     border-radius: 20px;
 }
@@ -215,7 +225,9 @@ html{
 
 }
 .info2{
-    margin-left: -100px;
+    margin-left: -70px;
+    width: 130px;
+    margin-top: 18px;
 }
 .home {
 
@@ -252,7 +264,7 @@ html{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 250px;
+    gap: 150px;
     margin-top: 150px;
     background-color: transparent;
     border-radius: 15px;
@@ -261,9 +273,6 @@ html{
     border-radius: 15px;
     scroll-snap-align: start;
     height: 70vh;
-
-
-
 }
 
 #details2 {
@@ -277,10 +286,6 @@ html{
     border-radius: 15px;
     padding: 10px;
     height: 70vh;
-    scroll-snap-align: start;
-
-
-
 
 }
 
@@ -296,8 +301,7 @@ html{
     height: 80vh;
     align-items: center;
     scroll-snap-align: start;
-
-
+    
 }
 
 .redirect {
@@ -313,10 +317,6 @@ html{
     transition: 0.3s;
     margin-left: 20px;
 
-
-
-
-
 }
 
 .redirect:hover {
@@ -328,6 +328,7 @@ html{
     cursor: pointer;
     transition: 0.5s;
     box-shadow: 5px 5px 5px;
+    scale: 1.1;
 
 
 
@@ -352,10 +353,12 @@ html{
     width: 512px;
     border-radius: 15px;
     margin-top: 20px;
-   
-
+    animation: slideinright;
+    animation-duration: 1s;
+    animation-delay: .5s;
 
 }
+
 .projects {
 
     background-color: transparent;
@@ -467,16 +470,64 @@ html{
 }
 .github-icon:hover{
     scale: 1.1;
+    animation: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+#em{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border:none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    background-color: #99180f;
+}
+
+#msg{
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    background-color: #99180f;
+    resize: none;
+}
+.contact-msg{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    background-color: #000000;
+    padding: 50px;
+    border-radius: 10px;
+    width: 700px;
+}
+#submit{
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+
+
+
+}
+#submit:hover{
+    scale: 1.02;
+    background-color: #00ff2a;
 
 }
 
 @media (max-width: 800px){
     #main{
         gap: 100px;
+        width: 500px;
     }
     .content{
-        margin-top: 100px;
-        gap: 150px;
+        margin-top: 10px;
+        gap: 1px;
+        width: 500px;
     }
     #menu{
         display:flex;
@@ -498,11 +549,16 @@ html{
         
 
     }
+    .headings{
+        font-size: 50px;
+        margin-left: -300px;
+    }
     #details1{
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+        width: 500px;
 
 
     }
@@ -516,7 +572,8 @@ html{
     }
     .info{
 
-       margin-left: -50px;
+       margin-left: -650px;
+
 
 
     }
@@ -530,73 +587,50 @@ html{
     .illustration{
         width: 290px;
         height: 250px;
-        margin-left:10px;
+        margin-left:-350px;
 
     }
-    .illustration:hover{
-        width: 290px;
-        height: 250px;
-        
-    }
-    .details2{
+    #details2{
 
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
 
     }
     #il2{
+
         width: 290px;
         height: 250px;
-        margin-left:-90px;
+        margin-left:-570px;
 
     }
-    #il2:hover{
-        width: 290px;
-        height: 250px;
-       
-
-
+    .il2child{
+       display: none;
     }
-    .details3{
-
+    .icons1{
+        margin-left: -350px;
+        margin-top: 140px;
+    }
+    #details3{
+        
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin-right: 20px;
+        gap: 10px;
+        width: 500px;
 
     }
     #il3{
-        width: 290px;
-        height: 250px;
-        margin-left:-100px;
-
+        display: none;
 
     }
-    #il3:hover{
-        width: 290px;
-        height: 250px;
-        margin-left:-100px;
-
-
+    .redirect{
+        margin-left: -560px;
     }
-    #in1{
-        margin-left: 10px;
-
+    #h2{
+        display: none;
     }
-    #in2{
-
-        margin-left: 10px;
-
-    }
-    #in3{
-
-        margin-left: 10px;
-    }
-    #in4{
-        margin-left: 10px;
-
-    }
-}
+  
 @media (max-width: 1200px){
 
 
@@ -606,4 +640,42 @@ html{
 
 
     }
+}
+}
+@keyframes slideinleft{
+    from{transform: translateX(-300px);}
+
+}
+@keyframes slideinright{
+    from{transform: translateX(300px);}
+}
+@keyframes infinity{
+    0%{transform: translateX(-10px);}
+    25%{transform: translateX(10px);}
+    50%{transform: translateX(-10px);}
+    75%{transform: translateX(10px);}
+    100%{transform: translateX(-10px);}
+}
+@keyframes spin{
+    50%{transform: rotateZ(30deg);}
+    100%{transform: rotateZ(-30deg);}
+
+}
+#logo-icon{
+    border-radius: 60px;
+    height: 100px;
+    width: 100px;
+    margin-top: -20px;
+}
+.logo-icon1{
+    margin-left: 10px;
+    margin-right:400px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+.inf:hover{
+    animation: infinity;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
