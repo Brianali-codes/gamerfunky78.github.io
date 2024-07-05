@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
 .paragraph{
     font-family: "Josefin Sans", sans-serif;
 }
@@ -73,8 +74,8 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     background-image: url(images/simplicity.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 250px;
-    height: 158px;
+    width: 350px;
+    height: 200px;
     border-radius: 10px;
     border-style: solid;
     border-color: cyan;
@@ -86,8 +87,8 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     cursor: pointer;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 250px;
-    height: 158px;
+    width: 350px;
+    height: 200px;
     border-radius: 10px;
     border-style: solid;
     border-color: cyan;
@@ -99,8 +100,8 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    width: 250px;
-    height: 158px;
+    width: 350px;
+    height: 200px;
     border-radius: 10px;
     border-style: solid;
     border-color: cyan;
@@ -112,9 +113,9 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     background-image: url(images/game.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 250px;
+    width: 350px;
     border-width: 3px;
-    height: 158px;
+    height: 200px;
     border-radius: 10px;
     border-style: solid;
     border-color: cyan;
@@ -208,6 +209,62 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 #iconcard:nth-child(0):hover{
     box-shadow: 2px, 20px 2px rgb(255, 0, 0);
 }
+.abt-cont {
+    transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
+}
+
+.abt-cont:hover {
+    background-color: rgb(233, 233, 233);
+    box-shadow: 5px 5px cyan;
+    transform: translateY(-5px);
+}
+#simplicity:hover,#game-genres:hover,#GP:hover,#remaya:hover{
+    box-shadow: 0px 5px cyan;
+    transform: translateY(-5px);
+    border-color: cyan;
+}
+#abouts{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 30px;
+}
+#abt1{
+    width: fit-content;
+    background-color: white;
+    transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
+    cursor: pointer;
+}
+#abt2{
+    background-color: white;
+    width: fit-content;
+    transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
+    cursor: pointer;
+}
+#abt3{
+    background-color: white;
+    width: fit-content;
+    height: 300px;
+    transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
+    cursor: pointer;
+}
+#abt4{
+    background-color: white;
+    width: fit-content;
+    transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
+    cursor: pointer;
+}
+.imageabt{
+    width: 300px;
+    height: 250px;
+    cursor: pointer;
+}
+#abt1:hover,#abt2:hover,#abt3:hover,#abt4:hover{
+    box-shadow: 5px 5px cyan;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
 @media (max-width: 600px) {
     #project-container{
         display: flex;
@@ -287,21 +344,33 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     }
     #About{
         gap: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    #abouts{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        height: 50vh;
+    }
+    #abt1{
+        height: 50px;
+    }
+    #flaps{
+        border: none;
+    }
+    #abt2{
+        height: 50px;
+    }
+    #abt3{
+        height: 50px;
+    }
+    #abt4{
+        height: 50px;
+    }
+    .imageabt{
+        display:none;
     }
     
-}
-
-.abt-cont {
-    transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
-}
-
-.abt-cont:hover {
-    background-color: rgb(233, 233, 233);
-    box-shadow: 5px 5px cyan;
-    transform: translateY(-5px);
-}
-#simplicity:hover,#game-genres:hover,#GP:hover,#remaya:hover{
-    box-shadow: 0px 5px cyan;
-    transform: translateY(-5px);
 }
 
