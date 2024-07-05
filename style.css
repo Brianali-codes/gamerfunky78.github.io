@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+.paragraph{
+    font-family: "Josefin Sans", sans-serif;
+}
+#img:hover{
+    animation: shake;
+    animation-duration: 0.5s;
+}
+@keyframes shake{
+    25%{transform: rotateZ(3deg);}
+    50%{transform: rotateZ(-3deg);}
+    75%{transform: rotateZ(3deg);}
+    100%{transform: rotateZ(-3deg);}
+}
+@keyframes change-bg{
+    from{background-color: #000000;}
+    to{background-color: white}
+}
+@keyframes reverse-bg{
+    from{background-color: #ffffff;}
+    to{background-color: rgb(0, 0, 0)}
+}
+@keyframes slide-in-left{
+    from{transform: translateX(-400px);}
+}
+@keyframes slide-in-left2{
+    from{transform: translateX(-300px);}
+}
+@keyframes slide-in-right{
+    from{transform: translateX(500px);}
+}
+@keyframes slide-in-bottom{
+    from{transform: translateY(500px);}
+}
+@keyframes slide-in-bottom2{
+    from{transform: translateY(600px);}
+}
+body,html{
+    scroll-snap-type: Y mandatory;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+#Home{
+    scroll-snap-align: start;
+    height: 100vh;
+}
+#About{
+    scroll-snap-align: start;
+    height: 100vh;
+}
+#Projects{
+    scroll-snap-align: start;
+    height: 100vh;
+}
+#Services{
+    scroll-snap-align: start;
+    height: 70vh;
+}
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none;
+}
+#project-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: auto;
+    justify-content: center;
+    margin: auto;
+}
+#simplicity{
+    background-image: url(images/simplicity.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 158px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: cyan;
+    border-width: 3px;
+    transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
+}
+#GP{
+    background-image: url(images/GP.jpg);
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 158px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: cyan;
+    border-width: 3px;
+    transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
+}
+#remaya{
+    background-image: url(images/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 250px;
+    height: 158px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: cyan;
+    border-width: 3px;
+    transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
+}
+
+#game-genres{
+    background-image: url(images/game.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 250px;
+    border-width: 3px;
+    height: 158px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: cyan;
+    transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
+}
+#simplicity:hover,#remaya:hover,#game-genres:hover{
+    border-color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.6s;
+}
+#hide-info{
+    background-color: rgb(255, 255, 255, 0.7);
+
+}
+#info{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 55px;
+}
+#heading{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 70px;
+}
+#heading2{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 80px;
+}
+#hide-info{
+    display: none;
+}
+#interchange{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 55px;
+    
+}
+@keyframes changeText{
+    to{transform: scale(0.9);}
+}
+@keyframes float{
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(10px);}
+    100%{transform: rotateY(0px);}
+}
+#hover-icon{
+    animation: float;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#Home{
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#About{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#nuv{
+    display: flex;
+    justify-content: center;
+    rotate: 270deg;
+    margin: 20px;
+    width: 100px;
+    height: 70px;
+    background-color: white;
+    position: fixed;
+    right: 0;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#flap{
+    border-color: black;
+    border-style: solid;
+}
+#about-info{
+    font-family:"Playwrite DE Grund", cursive;
+    font-size: 20px;
+}
+#iconcard{
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    background-color: #bbbbbb;
+    border-radius: 15px;
+    padding: 10px;
+    border-width: 2px;
+}
+#iconcard:hover{
+    cursor: pointer;
+}
+#iconcard:nth-child(0):hover{
+    box-shadow: 2px, 20px 2px rgb(255, 0, 0);
+}
+@media (max-width: 600px) {
+    #project-container{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    #simplicity{
+        height: 150px;
+        background-size: cover;
+    }
+    #remaya{
+        height: 150px;
+        background-size: cover;
+    }
+    #game-genres{
+        background-size: cover;
+        height: 150px;
+    }
+    #heading{
+        font-size: 40px;
+    }
+    #heading2{
+        font-size: 30px;
+    }
+    #interchange{
+        font-size: 25px;
+    }
+    #home-info2{
+        font-size: 25px;
+    }
+    #HOMER{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    #hover-icon{
+        width: 140px;
+        bottom: 100px;
+    }
+    #HOMWR{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #HOMWR2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #iconcard{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    #buttons{
+        display: none;
+    }
+    #MENUbtn{
+        display: block;
+    }
+    #form-main{
+        display: none;
+    }
+    #form-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+    #flaps{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: none;
+    }
+    #About{
+        gap: 0px;
+    }
+    
+}
+
+.abt-cont {
+    transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
+}
+
+.abt-cont:hover {
+    background-color: rgb(233, 233, 233);
+    box-shadow: 5px 5px cyan;
+    transform: translateY(-5px);
+}
+#simplicity:hover,#game-genres:hover,#GP:hover,#remaya:hover{
+    box-shadow: 0px 5px cyan;
+    transform: translateY(-5px);
+}
+
