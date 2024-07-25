@@ -8,6 +8,9 @@
     animation: shake;
     animation-duration: 0.5s;
 }
+#Navbar{
+    padding: 50px;
+}
 @keyframes shake{
     25%{transform: rotateZ(3deg);}
     50%{transform: rotateZ(-3deg);}
@@ -38,9 +41,7 @@
     from{transform: translateY(600px);}
 }
 body,html{
-    scroll-snap-type: Y mandatory;
-    overflow-y: scroll;
-    height: 100%;
+    background-color: #000000;
 }
 
 #Home{
@@ -68,6 +69,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     gap: 30px;
     padding: auto;
     justify-content: center;
+    align-items: center;
     margin: auto;
 }
 #simplicity{
@@ -83,7 +85,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
 }
 #GP{
-    background-image: url(images/GP.jpg);
+    background-image: url(images/Screenshot\ \(21\).png);
     cursor: pointer;
     background-repeat: no-repeat;
     background-size: cover;
@@ -96,9 +98,9 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
 }
 #remaya{
-    background-image: url(images/logo.jpg);
+    background-image: url(images/Screenshot\ \(22\).png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     width: 350px;
     height: 200px;
