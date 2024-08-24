@@ -10,6 +10,7 @@
 }
 #Navbar{
     padding: 50px;
+    z-index: 999;
 }
 @keyframes shake{
     25%{transform: rotateZ(3deg);}
@@ -85,7 +86,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
 }
 #GP{
-    background-image: url(images/Screenshot\ \(21\).png);
+    background-image: url(images/Screenshot\ \(28\).png);
     cursor: pointer;
     background-repeat: no-repeat;
     background-size: cover;
@@ -112,7 +113,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 }
 
 #game-genres{
-    background-image: url(images/game.png);
+    background-image: url(images/Screenshot\ \(27\).png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 350px;
@@ -272,6 +273,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
         display: flex;
         flex-direction: column;
         gap: 5px;
+        text-align: center;
     }
     #simplicity{
         height: 150px;
@@ -287,15 +289,19 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     }
     #heading{
         font-size: 40px;
+        text-align: center;
     }
     #heading2{
         font-size: 30px;
+        text-align: center;
     }
     #interchange{
         font-size: 25px;
+        text-align: center;
     }
     #home-info2{
         font-size: 25px;
+        text-align: center;
     }
     #HOMER{
         display: flex;
@@ -303,6 +309,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
         gap: 10px;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
     #hover-icon{
         width: 140px;
@@ -348,12 +355,14 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
         gap: 0px;
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
     #abouts{
         display: flex;
         flex-direction: column;
         gap: 5px;
         height: 50vh;
+        text-align: center;
     }
     #abt1{
         height: 50px;
