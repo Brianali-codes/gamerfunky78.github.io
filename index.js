@@ -23,7 +23,7 @@ function makeButton(){
 
 //Mini functions here ...
 function toggleNavbar() {
-    let MENU = document.getElementById("MENUPOP")
+    let MENU = document.getElementById("open-menu")
 
     if (MENU.style.display == "none" || MENU.style.display == "") {
         MENU.style.display = "flex"

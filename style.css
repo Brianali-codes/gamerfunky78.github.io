@@ -9,8 +9,16 @@
     animation-duration: 0.5s;
 }
 #Navbar{
-    padding: 50px;
+    padding: 40px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
     z-index: 999;
+    background-color: black;
+}
+#open-menu{
+    display: none;
 }
 @keyframes shake{
     25%{transform: rotateZ(3deg);}
@@ -99,7 +107,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
 }
 #remaya{
-    background-image: url(images/Screenshot\ \(22\).png);
+    background-image: url(images/Screenshot\ \(36\).png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
