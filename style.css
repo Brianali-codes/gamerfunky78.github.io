@@ -75,11 +75,18 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 #project-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 25px;
     padding: auto;
     justify-content: center;
     align-items: center;
     margin: auto;
+}
+.PC{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 #simplicity{
     background-image: url(images/simplicity.png);
